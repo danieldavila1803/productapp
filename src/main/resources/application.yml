@@ -8,6 +8,11 @@ spring:
   h2:
     console:
       enabled: true
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
   main:
     web-application-type: reactive
 server:
